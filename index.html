@@ -37,12 +37,12 @@
 
   <body>
 <!-------------------------- Nav bar goes here --------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
       <a class="navbar-brand" href="index.html" >
         <strong class="display-4" ><strong>QBViz</strong></strong><br>
-        <h6 class="text-muted">
+        <a class="text-muted">
           A modern framework for evaluating Quarterback<br> decision-making and relative performance
-        </h6>
+        </a>
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <hr>
@@ -65,7 +65,7 @@
 
 <!---------------------------- The main Content Area ---------------------------->
   <div class="container-fluid">
-    <div class="row">
+    <div class="row align-center">
     <div class="col-1">
       </div>
     <div class='col-10 tableauPlaceholder' id='viz1555522992488' >
@@ -83,7 +83,7 @@
       <param name='display_static_image' value='yes' />
       <param name='display_spinner' value='yes' />
       <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
+      <param name='display_count' value='no' />
       <param name='filter' value='publish=yes' />
     </object>
     </div>
@@ -95,14 +95,14 @@
     var divElement = document.getElementById('viz1555522992488');
     var vizElement = divElement.getElementsByTagName('object')[0];
     if ( divElement.offsetWidth > 800 ) {
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      vizElement.style.width='90%';
+      vizElement.style.height=(divElement.offsetWidth*0.50)+'px';
     } else if ( divElement.offsetWidth > 500 ) {
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      vizElement.style.width='90%';
+      vizElement.style.height=(divElement.offsetWidth*0.50)+'px';
     } else {
-      vizElement.style.width='100%';
-      vizElement.style.height='1477px';
+      vizElement.style.width='90%';
+      vizElement.style.height=(divElement.offsetWidth*0.50)+'px';
     }
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -112,7 +112,7 @@
 
 <!----------------------------- Footnotes, Credits ----------------------------->
 
-  <div class="container-fluid fixed-bottom bg-primary text-white">
+  <div class="container-fluid bottom bg-primary text-white">
     <div class="row justify-content-end">
       <div class="col-2 align-right">
         <strong class="text-right"><a class="text-muted" href="https://ui.adsabs.harvard.edu/#abs/2018arXiv180200998Y/abstract">nflWAR</a></strong>
