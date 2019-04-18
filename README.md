@@ -5,16 +5,23 @@
 
 __TODO:__
 
-- [x] Get it published
+- [] Add Avg Lines to the scatterplot
 
-- [x] add Greg's EV data
+- [] Replace "All" btn group with something meaningful
 
-- [x] Update Tableau Workbook - fix sizing
+- [] It's not mobile friendly bc of how I embedded the viz
+
+- [x] Move/Rename "Help Button"
+
+- [x] Could probably remove some of the extra scripts (MathJax & D3) if we don't need them  
 
 - [x] Add dynamic buttons to change filter selections
 
   - ~possibly colored buttons based on total QB EV~
 
-- [] It's not mobile friendly bc of how I embedded the viz
+- [x] add Greg's EV data
 
-- [x] Could probably remove some of the extra scripts (MathJax & D3) if we don't need them  
+- [x] Update Tableau Workbook - fix sizing
+
+  - [x] Get it published
+  
