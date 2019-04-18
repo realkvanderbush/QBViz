@@ -4,11 +4,25 @@ var topEPA=["Rivers, Philip",
 "Flacco, Joseph",
 "Cousins, Kirk"
 ],
+bottomEPA=[ "Hoyer, Brian",
+ "Carr, Derek",
+ "Brees, Drew",
+ "Keenum, Casey",
+ "Flacco, Joseph"
+]
+,
 topPCT=["Ryan, Matthew",
 "Winston, Jameis",
 "Newton, Cameron",
 "Rodgers, Aaron",
 "Wilson, Russell"
+],
+bottomPCT=[
+   "Kizer, DeShone",
+ "Flacco, Joseph",
+ "Stafford, John",
+ "Brees, Drew",
+ "Rivers, Philip"
 ],
 abcList=["Anderson, Derek",
 "Beathard, Casey",

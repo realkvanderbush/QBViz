@@ -11,6 +11,16 @@ $(document).ready(function(){
     $("#topPctList").append(b)
   });
 
+  bottomEPA.forEach(function(v){
+    var b = $('<button type="button" class="btn btn-danger btn-qb" data="'+v+'">'+v+'</button>');
+    $("#bottomEPAList").append(b)
+  });
+
+  bottomPCT.forEach(function(v){
+    var b = $('<button type="button" class="btn btn-danger btn-qb" data="'+v+'">'+v+'</button>');
+    $("#bottomPctList").append(b)
+  });
+
 var i=0;
   abcList.forEach(function(v){
     var b = $('<button type="button" class="btn btn-secondary btn-qb" data="'+v+'">'+v+'</button>');
