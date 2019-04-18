@@ -2,7 +2,8 @@ $(document).ready(function(){
   $(initViz);
 
   topEPA.forEach(function(v){
-    var b = $('<button type="button" class="btn btn-primary btn-qb" data="'+v+'">'+v+'</button>');
+    var p = (v=="Wilson, Russell")? " active":"";
+    var b = $('<button type="button" class="btn btn-primary btn-qb'+p+'" data="'+v+'">'+v+'</button>');
     $("#topEPAList").append(b)
   });
 
