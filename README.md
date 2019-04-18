@@ -7,9 +7,9 @@ __TODO:__
 
 - [x] Get it published
 
-- [ ] add Greg's EV data
+- [x] add Greg's EV data
 
-- [ ] Update Tableau Workbook - fix sizing
+- [x] Update Tableau Workbook - fix sizing
 
 - [ ] Add dynamic buttons to change filter selections
 
