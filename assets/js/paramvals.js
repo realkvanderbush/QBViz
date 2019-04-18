@@ -1,8 +1,8 @@
-var topEPA=["Rivers, Philip",
-"Brees, Drew",
-"Glennon, Michael",
-"Flacco, Joseph",
-"Cousins, Kirk"
+var topEPA=["Wilson, Russell",
+"Watson, Derrick",
+"Smith, Alexander",
+"Winston, Jameis",
+"Kizer, DeShone"
 ],
 bottomEPA=[ "Hoyer, Brian",
  "Carr, Derek",
