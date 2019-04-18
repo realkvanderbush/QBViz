@@ -11,10 +11,16 @@ $(document).ready(function(){
     $("#topPctList").append(b)
   });
 
+var i=0;
   abcList.forEach(function(v){
     var b = $('<button type="button" class="btn btn-secondary btn-qb" data="'+v+'">'+v+'</button>');
-    $("#abcList").append(b)
-  })
+    if(i%2==0){
+      $("#abcList_e").append(b);
+    } else{
+      $("#abcList_o").append(b);
+    }
+    i+=1;
+  });
 
   $(".btn-qb").on("click",function(){
     var d=$(this).attr("data");

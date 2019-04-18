@@ -12,7 +12,8 @@
     <!--My StyleSheet-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <!-- Initializing MathJax -->
+<!--
+    Initializing MathJax
     <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -25,12 +26,12 @@
     "HTML-CSS": { fonts: ["TeX"] }
   });
   </script>
-
+-->
     <!-- MathJax CDN -->
-  <script type="text/javascript"
+<!--  <script type="text/javascript"
      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js">
   </script>
-
+-->
 
     <title> QBViz </title>
   </head>
@@ -96,8 +97,8 @@
 
 
 <!-- The main Content Area ---------------------------->
-  <div class="container-fluid">
-    <div class="row justify-content-sm-center">
+<div class="container-fluid">
+  <div class="row justify-content-sm-center">
     <div class="col-sm-1" id="leftCol">
       <p class="display-5"><strong>Top 5 E.P.A.</strong></p>
       <div class="btn-group-vertical" role="group" id="topEPAList">
@@ -106,18 +107,26 @@
       <p class="display-5"><strong>Top 5 % Correct</strong></p>
       <div class="btn-group-vertical" role="group" id="topPctList">
       </div>
-      <br><br>
-
     </div>
-    <div class='col-10 justify-content-sm-center' id='tab' >
+    <div class='col-sm-9 justify-content-sm-center' id='tab' >
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2 p-0-sm m-0-sm">
       <p class="display-5"><strong>All</strong></p>
-      <div class="btn-group-vertical btn-grp-sm" role="group" id="abcList">
+      <div class="row no-gutters">
+          <div class="col p-0-sm m-0-sm">
+          <div class="btn-group-vertical btn-grp-sm" role="group" id="abcList_e">
+          </div>
+        </div>
+        <div class="col p-0-sm m-0-sm">
+          <div class="btn-group-vertical btn-grp-sm"
+          role="group" id="abcList_o">
+          </div>
+        </div>
       </div>
     </div>
-    </div>
   </div>
+</div>
+
 
 <!------------------------------------------------------------------------------->
 
@@ -133,18 +142,27 @@
 
   <div class="container-fluid bottom bg-primary text-white">
     <div class="row justify-content-end">
+
+
+      <div class="col-2 align-right">
+        <strong class="text-right"><a class="text-muted" href="https://aws.amazon.com/rds/postgresql/">PostgreSQL on AWS</a></strong>
+      </div>
+
+      <div class="col-2 align-right">
+        <strong class="text-right"><a class="text-muted" href="https://public.tableau.com">Tableau</a></strong>
+      </div>
+      <div class="col-2 align-right">
+        <strong class="text-right"><a class="text-muted" href="https://github.com/nfl-football-ops/Big-Data-Bowl">NFL Big Data Bowl</a></strong>
+      </div>
+
       <div class="col-2 align-right">
         <strong class="text-right"><a class="text-muted" href="https://ui.adsabs.harvard.edu/#abs/2018arXiv180200998Y/abstract">nflWAR</a></strong>
       </div>
-      <div class="col-2 align-right">
-        <strong class="text-right"><a class="text-muted" href="https://postgresql.org">PostgreSQL</a></strong>
-      </div>
+
       <div class="col-2 align-right">
         <strong class="text-right"><a class="text-muted" href="https://getbootstrap.com">Bootstrap</a></strong>
       </div>
-      <div class="col-2 align-right">
-        <strong class="text-right"><a class="text-muted" href="https://d3js.org">D3</a></strong>
-      </div>
+
       <div class="col-2 align-right">
         <strong class="text-right"><a class="text-muted" href="https://bootswatch.com/flatly/?">Theme by Bootswatch</a></strong>
       </div>
@@ -156,25 +174,24 @@
 
 
 
-<!-- Link to Scripts, etc ---------------------------->
+    <!-- Link to Scripts, etc ---------------------------->
 
-<script type="text/javascript" src="assets/js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.4.0.min.js"></script>
 
- <!--Bootstrap.js Bundle-->
- <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+     <!--Bootstrap.js Bundle-->
+     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.js"></script>
 
- <!--Bootstrap.js Bundle-->
- <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+     <!--Bootstrap.js Bundle-->
+     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js">
-</script>
-<script src="assets/js/paramvals.js">
-</script>
-<script src="assets/js/qb.js">
-</script>
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js">
+    </script>
+
+    <script src="assets/js/paramvals.js">
+    </script>
+    <script src="assets/js/qb.js">
+    </script>
 
 
-
-</script>
-</body>
+  </body>
 </html>
