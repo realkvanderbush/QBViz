@@ -17,4 +17,4 @@ __TODO:__
 
 - [] It's not mobile friendly bc of how I embedded the viz
 
-- [] Could probably remove some of the extra scripts (MathJax & D3) if we don't need them  
+- [x] Could probably remove some of the extra scripts (MathJax & D3) if we don't need them  
