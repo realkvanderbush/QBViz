@@ -1,29 +1,31 @@
 $(document).ready(function(){
   $(initViz);
-  $("#test").on("click",function(){
-    selectParam("QB Selection","Brees, Drew");
-  })
+
   topEPA.forEach(function(v){
-    var b = $('<button type="button" class="btn btn-primary" data="'+v+'">'+v+'</button>');
+    var b = $('<button type="button" class="btn btn-primary btn-qb" data="'+v+'">'+v+'</button>');
     $("#topEPAList").append(b)
   });
 
   topPCT.forEach(function(v){
-    var b = $('<button type="button" class="btn btn-primary" data="'+v+'">'+v+'</button>');
+    var b = $('<button type="button" class="btn btn-primary btn-qb" data="'+v+'">'+v+'</button>');
     $("#topPctList").append(b)
   });
 
   abcList.forEach(function(v){
-    var b = $('<button type="button" class="btn btn-secondary" data="'+v+'">'+v+'</button>');
+    var b = $('<button type="button" class="btn btn-secondary btn-qb" data="'+v+'">'+v+'</button>');
     $("#abcList").append(b)
   })
 
-  $(".btn").on("click",function(){
+  $(".btn-qb").on("click",function(){
     var d=$(this).attr("data");
     selectParam("QB Selection",d);
 
-    $(".btn").removeClass("active");
+    $(".btn-qb").removeClass("active");
     $(this).addClass("active");
+  })
+
+  $("#hlpBtn").on("click",function(){
+    $("#hlpModal").modal();
   })
 });
 var viz;

@@ -36,7 +36,7 @@
   </head>
 
   <body>
-<!-------------------------- Nav bar goes here --------------------------->
+<!-- Nav bar goes here --------------------------->
     <nav class="navbar navbar-expand navbar-dark bg-primary">
       <a class="navbar-brand" href="index.html" >
         <strong class="display-4" ><strong>QBViz</strong></strong><br>
@@ -46,31 +46,56 @@
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <hr>
-        <!--<ul class="navbar-nav">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <button class="btn btn-outline-info" data="modal" id="hlpBtn" target="#hlpModal">Help</button>
           </li>
-          <li class="nav-item">
+        <!--  <li class="nav-item">
             <a class="nav-link" href="#something">Something</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#something-else">Something Else</a>
-          </li>
-        </ul>-->
+          </li> -->
+        </ul>
       </div>
     </nav>
     <br>
 <!------------------------------------------------------------------------------->
 
+<!-- Help Dialogue Modal ----------------------------------------------------->
+  <div id="hlpModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">About QBViz</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3 id="the-problem">The Problem</h3>
+          <hr>
+          <p>Standard metrics for Quarterback assessment only quantify outcomes. They can be skewed due to externalities, and really don't give great insight into the quality of decisions that are being made during the play.</p>
+          <h3 id="a-new-way">A New Way</h3>
+          <hr>
+          <p>The NFL placed sensors on players during the 2007 season, giving a new, robust source of data for analyzing what happens during play. Using this data, we've devised a method to isolate the moment that the quarterback decided to pass the ball, and also evaluate all other opportunities at that moment.</p>
+          <h3 id="evaluating-opportunity">Evaluating Opportunity</h3>
+          <hr>
+          <p>By extracting key features from the critical decision points of these plays, we can score quarterbacks based on their decision history rather than their outcome history. We use the selected receivers' outcomes to train a random forest model and extrapolate completion probabilities to the remaining receivers that were not selected. Additionally, we combine this probability with an "Expected Yards Added" metric (nflWAR). Using this new metric, Expected Points Added, we can compare a quarterback's selected receiver to the expected outcomes of all other eligible receivers on the field. With this innovative approach, we can better control for the events <em>during</em> a play rather than simply the outcome.</p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
+<!------------------------------------------------------------------------------->
 
 
-
-
-
-<!---------------------------- The main Content Area ---------------------------->
+<!-- The main Content Area ---------------------------->
   <div class="container-fluid">
     <div class="row justify-content-sm-center">
     <div class="col-sm-1" id="leftCol">
@@ -104,7 +129,7 @@
 
 
 
-<!----------------------------- Footnotes, Credits ----------------------------->
+<!-- Footnotes, Credits ----------------------------->
 
   <div class="container-fluid bottom bg-primary text-white">
     <div class="row justify-content-end">
@@ -131,7 +156,7 @@
 
 
 
-<!---------------------------- Link to Scripts, etc ---------------------------->
+<!-- Link to Scripts, etc ---------------------------->
 
 <script type="text/javascript" src="assets/js/jquery-3.4.0.min.js"></script>
 
