@@ -30,11 +30,14 @@ var viz;
 function initViz(){
   var c = document.getElementById('tab'),
   u="https://public.tableau.com/shared/8TTQWGJ5Y";
+  var h=(c.offsetWidth<800) ? "100%" : (c.offsetWidth*0.6)+"px";
   var o={
     hideTabs:true,
     width:c.offsetWidth,
-    height:(c.offsetWidth*0.6)+"px"
+    height:h
     };
+
+
   viz= new tableau.Viz(c,u,o);
 };
 

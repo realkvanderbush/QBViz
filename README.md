@@ -11,6 +11,8 @@ __TODO:__
 
 - [x] Update Tableau Workbook - fix sizing
 
-- [ ] Add dynamic buttons to change filter selections
+- [x] Add dynamic buttons to change filter selections
 
-  - possibly colored buttons based on total QB EV
+  - ~possibly colored buttons based on total QB EV~
+
+  [] It's not mobile friendly bc of how I embedded the viz
