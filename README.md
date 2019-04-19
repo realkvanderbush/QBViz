@@ -5,7 +5,7 @@
 
 __TODO:__
 
-- [] Add Avg Lines to the scatterplot
+- [x] Add ~Avg~ Trend Lines to the scatterplot
 
 - [] Replace "All" btn group with something meaningful
 
