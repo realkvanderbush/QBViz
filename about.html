@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76022225-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-76022225-2');
+    </script>
+
+    <meta charset="utf-8">
+    <!--
+    Link to Style Sheets, Stuff like that
+    -->
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <!--Bootstrap Theme-->
+    <link rel="stylesheet" type="text/css" href="assets/css/flatly.bootstrap.min.css">
+    <!--My StyleSheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!--
+    Initializing MathJax
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+  </script>
+-->
+    <!-- MathJax CDN -->
+<!--  <script type="text/javascript"
+     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js">
+  </script>
+-->
+
+    <title> QBViz </title>
+  </head>
+
+  <body>
+<!-- Nav bar goes here --------------------------->
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html" >
+        <strong class="display-4" ><strong>QBViz</strong></strong><br>
+        <a class="text-muted">
+          A modern framework for evaluating Quarterback<br> decision-making and relative performance
+        </a>
+      </a>
+    </nav>
+    <br>
+
+<!------------------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------->
+
+
+<!-- The main Content Area ---------------------------->
+<div class="container-fluid">
+    <p class = "display-3">
+      Thanks for Visiting
+    </p>
+    <br>
+    <p><h5>I want to show you a project from my graduate program that should highlight some of my abilities.  <a href="index.html">Click Here</a> to go straight to the final presentation.
+    </p>
+    <p>  Over a short few weeks, my team and I <strong>sourced raw data</strong>, performed a <strong>significant analysis</strong>, and <strong>presented</strong> the results in an <strong>interactive and user-friendly</strong> way.
+    </h5>
+    </p>
+    <hr><br>
+    <h4><strong>The Problem</strong></h4>
+    <h5>
+      <p>
+        The problem was stated that typical metrics used to assess NFL quarterbacks didn't account for the player's ability to make the best decisions <em>during</em> a given play. We set out to explore the possibility of isolating the moment that a quarterback chose to pass, and evaluate the field at that time. From there, we could assess whether or not the pass was to the best player available.
+      </p>
+    </h5>
+
+    <h4><strong>The Data</strong></h4>
+    <h5>
+      <p>
+        Was sourced from the NFL. We received text files of player tracking data. These separate files included various sensor readings of all players on the field throughout some 2017 games.  We loaded the data into a PostgreSQL database on AWS, and began our analysis.
+      </p>
+    </h5>
+
+    <h4><strong>The Analysis</strong></h4>
+    <h5>
+      <p>
+
+        In order to evaluate the quality of a decision, we created a value metric based on the receiver. Every eligible receiver has a value that changes based on their field position as well as other factors. What we had to do next was train a model to determine the probability of a given receiver catching a pass and actually realizing his estimated value.
+
+        Significant feature engineering was needed to build the catch probability model. It included several factors like distance to the quarterback and distance to defenders. One interesting approach we took was to vectorize the relative paths of the receivers (dx,dy), and use KMeans to classify the route.
+
+        Finally, after testing several models, we trained a Random Forest classifier to return the catch probability (RF gave similar results to XGBoost but was faster to train).  With our catch probabilities, we could weight the value metric to give us "Expected Yards Added"
+      </p>
+    </h5>
+    <h4><strong>The Presentation</strong></h4>
+    <h5>
+      <p>
+        Knowing that the potential audience might not be interested in the math, we developed a simple web-based dashboard experience for exploring the 2017 quarterback lineup based on the player's ability to select the receiver with the highest EYA at the time he passed the ball. That's QBViz! <a href="index.html">Enjoy!</a>
+
+      </p>
+    </h5>
+    <h4><strong>Questions?</strong></h4>
+    <h5>
+      <p>
+        I'd love to get the chance to answer your questions and/or explain how I can put these skills to work in a business setting.<a href="https://www.linkedin.com/in/kyle-vanderbush"> Connect with me on LinkedIn</a>
+
+      </p>
+    </h5>
+    <br><br><br><br>
+</div>
+
+
+<!------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+<!-- Footnotes, Credits ----------------------------->
+
+  <div class="container-fluid bottom bg-primary text-white">
+    <div class="row justify-content-end">
+
+
+      <div class="col-2 align-right">
+        <strong class="text-right"><a class="text-muted" href="https://aws.amazon.com/rds/postgresql/">PostgreSQL on AWS</a></strong>
+      </div>
+
+      <div class="col-2 align-right">
+        <strong class="text-right"><a class="text-muted" href="https://public.tableau.com">Tableau</a></strong>
+      </div>
+      <div class="col-2 align-right">
+        <strong class="text-right"><a class="text-muted" href="https://github.com/nfl-football-ops/Big-Data-Bowl">NFL Big Data Bowl</a></strong>
+      </div>
+
+      <div class="col-2 align-right">
+        <strong class="text-right"><a class="text-muted" href="https://ui.adsabs.harvard.edu/#abs/2018arXiv180200998Y/abstract">nflWAR</a></strong>
+      </div>
+
+      <div class="col-2 align-right">
+        <strong class="text-right"><a class="text-muted" href="https://getbootstrap.com">Bootstrap</a></strong>
+      </div>
+
+      <div class="col-2 align-right">
+        <strong class="text-right"><a class="text-muted" href="https://bootswatch.com/flatly/?">Theme by Bootswatch</a></strong>
+      </div>
+    </div>
+  </div>
+<!------------------------------------------------------------------------------->
+
+
+
+
+
+    <!-- Link to Scripts, etc ---------------------------->
+
+    <script type="text/javascript" src="assets/js/jquery-3.4.0.min.js"></script>
+
+     <!--Bootstrap.js Bundle-->
+     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+
+     <!--Bootstrap.js Bundle-->
+     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js">
+    </script>
+
+    <script src="assets/js/paramvals.js">
+    </script>
+    <script src="assets/js/qb.js">
+    </script>
+
+
+  </body>
+</html>
